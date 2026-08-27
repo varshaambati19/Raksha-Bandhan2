@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Raksha Bandhan, Anna ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(212, 166, 74, .10),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #16040a,
+            #3a0a18 52%,
+            #120308
+        );
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   ANIMATED BACKGROUND
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -2;
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(255, 215, 119, .18),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 88% 15%,
+            rgba(255, 105, 150, .16),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 50% 75%,
+            rgba(180, 35, 85, .20),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #160008 0%,
+            #3b0017 38%,
+            #650025 65%,
+            #180009 100%
+        );
+    background-size: 140% 140%;
+    animation: elegantBackground 18s ease-in-out infinite alternate;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: .22;
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255, 215, 119, .55) 1px,
+            transparent 1.5px
+        ),
+        radial-gradient(
+            circle,
+            rgba(255, 143, 175, .4) 1px,
+            transparent 1.5px
+        );
+    background-size: 70px 70px, 110px 110px;
+    background-position: 0 0, 35px 45px;
+    animation: sparkleDrift 25s linear infinite;
+}
+
+@keyframes elegantBackground {
+    0% {
+        background-position: 0% 50%;
+        transform: scale(1);
+    }
+    100% {
+        background-position: 100% 50%;
+        transform: scale(1.04);
+    }
+}
+
+@keyframes sparkleDrift {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-70px);
+    }
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.floating-heart {
+    position: absolute;
+    bottom: -50px;
+    opacity: .75;
+    animation: floatHeart linear infinite;
+}
+
+.floating-heart:nth-child(1) { left: 6%; font-size: 18px; animation-duration: 12s; }
+.floating-heart:nth-child(2) { left: 18%; font-size: 24px; animation-duration: 16s; animation-delay: 2s; }
+.floating-heart:nth-child(3) { left: 32%; font-size: 14px; animation-duration: 11s; animation-delay: 4s; }
+.floating-heart:nth-child(4) { left: 48%; font-size: 22px; animation-duration: 15s; animation-delay: 1s; }
+.floating-heart:nth-child(5) { left: 64%; font-size: 16px; animation-duration: 13s; animation-delay: 5s; }
+.floating-heart:nth-child(6) { left: 78%; font-size: 26px; animation-duration: 17s; animation-delay: 2s; }
+.floating-heart:nth-child(7) { left: 90%; font-size: 18px; animation-duration: 14s; animation-delay: 6s; }
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: .75;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   OPENING HEART RAIN
+========================= */
+
+.opening-heart {
+    position: fixed;
+    top: -50px;
+    pointer-events: none;
+    z-index: 999;
+    filter: drop-shadow(0 0 6px rgba(255, 180, 200, .5));
+    animation: heartRainFall linear forwards;
+}
+
+@keyframes heartRainFall {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(.6);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(10vh) rotate(45deg) scale(1.1);
+    }
+    100% {
+        transform: translateY(115vh) rotate(360deg) scale(.85);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   FESTIVE LIGHTS
+========================= */
+
+.lights {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.bulb {
+    margin-top: 28px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ffd978;
+    box-shadow: 0 0 10px #ffd978, 0 0 25px #ff9d38;
+    animation: glow 1.5s infinite alternate;
+}
+
+.bulb:nth-child(even) {
+    animation-delay: .6s;
+}
+
+@keyframes glow {
+    from {
+        opacity: .45;
+        transform: scale(.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.25);
+    }
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 110px 7% 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.small-title {
+    font-family: 'Great Vibes', cursive;
+    color: #ffb4c9;
+    font-size: 32px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(65px, 9vw, 115px);
+    line-height: .82;
+    color: #e7c77a;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
+    transition: text-shadow .4s ease, transform .4s ease;
+}
+
+.hero h1:hover,
+.hero h2:hover,
+.section-title:hover {
+    text-shadow: 0 0 15px rgba(255, 215, 119, .45), 0 0 35px rgba(255, 105, 150, .22);
+    transform: translateY(-2px);
+}
+
+.hero h2 {
+    margin-top: 28px;
+    font-family: 'Great Vibes', cursive;
+    color: #e8a8b8;
+    font-size: clamp(42px, 5vw, 68px);
+    transition: text-shadow .4s ease, transform .4s ease;
+}
+
+.special-line {
+    margin: 15px 0 20px;
+    color: #e7c77a;
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+}
+
+.hero-subtitle {
+    max-width: 500px;
+    margin: 0 auto 28px;
+    color: #f8dce5;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   SURPRISE BUTTON
+========================= */
+
+.surprise-btn {
+    border: none;
+    cursor: pointer;
+    padding: 17px 38px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff477e, #ff9865);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 12px 35px rgba(255, 60, 120, .35);
+    transition: .3s;
+}
+
+.surprise-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 71, 126, .5), 0 0 25px rgba(255, 190, 90, .18);
+}
+
+
+/* =========================
+   ANNA PHOTO (CONTAINED & FITTED)
+========================= */
+
+.multi-photo-frame {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 14px; /* Increased frame border padding so the photo fits neatly inside */
+    background: linear-gradient(135deg, #ffd36b, #ff6998, #ffd36b);
+    border-radius: 32px;
+    box-shadow: 0 0 35px rgba(255, 80, 140, .35), 0 25px 70px rgba(0, 0, 0, .5);
+    transform: rotate(2deg);
+    transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s ease;
+}
+
+.multi-photo-frame:hover {
+    transform: translateY(-10px) rotate(0) scale(1.025);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .55), 0 0 45px rgba(255, 190, 90, .25);
+}
+
+.photo-stack {
+    position: relative;
+    width: 100%;
+    height: 310px;
+}
+
+.photo-stack img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 310px;
+    object-fit: contain; /* Changed from cover to contain so the whole image fits fully inside */
+    background-color: #24040e; /* Matches theme nicely behind containment bars */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+    transition: all .5s ease;
+}
+
+.photo-stack img:nth-child(1) {
+    transform: rotate(-4deg) scale(.92);
+    opacity: .7;
+    z-index: 1;
+}
+
+.photo-stack img:nth-child(2) {
+    transform: rotate(3deg) scale(.96);
+    opacity: .85;
+    z-index: 2;
+}
+
+.photo-stack img:nth-child(3) {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    z-index: 3;
+}
+
+.multi-photo-frame:hover .photo-stack img {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 82%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 30px;
+    background: rgba(45, 0, 20, .85);
+    backdrop-filter: blur(8px);
+    color: #ffd477;
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
+    letter-spacing: .5px;
+    z-index: 10;
+}
+
+
+/* =========================
+   MAIN MESSAGE
+========================= */
+
+.message-section {
+    position: relative;
+    z-index: 1;
+    padding: 90px 7%;
+}
+
+.message-card {
+    max-width: 950px;
+    margin: auto;
+    padding: 60px 50px;
+    text-align: center;
+    border-radius: 35px;
+    border: 1px solid rgba(231, 199, 122, .32);
+    background: rgba(38, 5, 16, .62);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 25px 75px rgba(0, 0, 0, .35);
+    transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s ease, border-color .5s ease;
+}
+
+.message-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 215, 119, .8);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .45), 0 0 45px rgba(255, 190, 90, .14);
+}
+
+.message-card h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #e8a8b8;
+    font-size: clamp(42px, 6vw, 65px);
+    margin-bottom: 30px;
+}
+
+.message-card p {
+    color: #f8dfe7;
+    font-size: 17px;
+    line-height: 2;
+    margin-bottom: 17px;
+}
+
+.highlight {
+    color: #ffd477 !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px !important;
+    font-weight: 700;
+}
+
+
+/* =========================
+   RAKHI MEMORY
+========================= */
+
+.rakhi-section {
+    position: relative;
+    z-index: 1;
+    padding: 30px 7% 100px;
+}
+
+.rakhi-content {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.rakhi-photo {
+    padding: 8px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #ffd477, #ff5e96);
+    border: 1px solid rgba(231, 199, 122, .32);
+    box-shadow: 0 20px 55px rgba(0, 0, 0, .4);
+    transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s ease;
+}
+
+.rakhi-photo:hover {
+    transform: translateY(-10px) rotate(-1deg) scale(1.025);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .5), 0 0 35px rgba(255, 105, 150, .25);
+}
+
+.rakhi-photo img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.rakhi-text h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #e8a8b8;
+    font-size: 58px;
+    margin-bottom: 22px;
+}
+
+.rakhi-text p {
+    color: #f6dce5;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+/* =========================
+   MEMORY GALLERY
+========================= */
+
+.gallery-section {
+    position: relative;
+    z-index: 1;
+    padding: 50px 7% 100px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: #e7c77a;
+    font-size: 46px;
+    margin-bottom: 45px;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
+    transition: text-shadow .4s ease, transform .4s ease;
+}
+
+.gallery-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.gallery-card {
+    position: relative;
+    border-radius: 28px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255, 215, 119, .35), rgba(255, 105, 150, .25));
+    border: 1px solid rgba(231, 199, 122, .4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .4);
+    transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease, border-color .4s ease;
+    overflow: hidden;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(255, 215, 119, .8);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, .5), 0 0 35px rgba(255, 105, 150, .3);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 16px 10px 8px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #ffd477;
+    font-size: 26px;
+}
+
+
+/* =========================
+   THANK YOU
+========================= */
+
+.thank-you-section {
+    position: relative;
+    z-index: 1;
+    padding: 40px 7% 90px;
+}
+
+.thank-you-card {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 85px 40px 75px;
+    text-align: center;
+    border-radius: 35px;
+    background: linear-gradient(145deg, rgba(50, 10, 22, .95), rgba(24, 4, 11, .98));
+    border: 1px solid rgba(231, 199, 122, .45);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .65), 0 0 45px rgba(255, 105, 150, .15);
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.thank-you-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 35px 85px rgba(0, 0, 0, .75), 0 0 55px rgba(231, 199, 122, .25);
+}
+
+.thank-you-meta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #d4a373;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    opacity: .9;
+}
+
+.thank-you-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(40px, 5.5vw, 62px);
+    color: #f7ede2;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.thank-you-highlight {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #e7c77a;
+    font-size: clamp(42px, 6vw, 68px);
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.thank-you-card .heart-icon {
+    display: inline-block;
+    color: #ff3366;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-left: 10px;
+    animation: heartBeat 1.8s infinite;
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.22); }
+}
+
+.thank-you-subtext {
+    margin-top: 32px;
+    color: #d8b4be;
+    font-size: 15px;
+    line-height: 2.1;
+    letter-spacing: .5px;
+}
+
+.thank-you-small-heart {
+    color: #ff477e;
+    font-size: 26px;
+    margin: 24px 0 16px;
+}
+
+.thank-you-festive-wishing {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(34px, 4.5vw, 46px);
+    color: #e7c77a;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    position: relative;
+    z-index: 1;
+    padding: 70px 20px 80px;
+    text-align: center;
+    background: rgba(20, 0, 10, .55);
+}
+
+footer h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #e7c77a;
+    font-size: clamp(42px, 6vw, 72px);
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
+}
+
+footer p {
+    margin-top: 18px;
+    color: #eacbd5;
+}
+
+.signature {
+    margin-top: 30px;
+    color: #ff8faf;
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+}
+
+
+/* =========================
+   SURPRISE LETTER
+========================= */
+
+.surprise {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(18, 0, 9, .94);
+    backdrop-filter: blur(14px);
+    z-index: 100;
+}
+
+.surprise.active {
+    display: flex;
+}
+
+.surprise-box {
+    max-width: 650px;
+    width: 100%;
+    max-height: 90vh;
+    padding: 42px 40px 35px;
+    text-align: center;
+    border-radius: 35px;
+    border: 2px solid rgba(231, 199, 122, .7);
+    background: linear-gradient(145deg, #4a0d20, #1c040d);
+    box-shadow: 0 0 90px rgba(255, 70, 130, .45);
+    animation: popup .5s ease;
+    overflow: hidden;
+}
+
+@keyframes popup {
+    from { transform: scale(.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.letter-decoration {
+    font-size: 48px;
+    margin-bottom: 5px;
+    animation: letterFloat 2s ease-in-out infinite;
+}
+
+@keyframes letterFloat {
+    0%, 100% { transform: translateY(0) rotate(-3deg); }
+    50% { transform: translateY(-6px) rotate(3deg); }
+}
+
+.letter-top {
+    font-family: 'Poppins', sans-serif;
+    color: #d4a373;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.surprise-box h2 {
+    margin: 5px 0 22px;
+    color: #ffd477;
+    font-family: 'Great Vibes', cursive;
+    font-size: 58px;
+    font-weight: 500;
+    text-shadow: 0 2px 15px rgba(255, 215, 119, .3);
+}
+
+.letter-content {
+    max-height: 450px;
+    overflow-y: auto;
+    padding: 5px 18px 10px;
+    text-align: left;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 180, 200, .5) transparent;
+}
+
+.letter-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.letter-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.letter-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 180, 200, .5);
+    border-radius: 10px;
+}
+
+.letter-content p {
+    color: #f8dfe7;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.letter-highlight {
+    text-align: center;
+    color: #ffd477 !important;
+    font-size: 25px !important;
+    font-style: italic;
+    margin-top: 28px;
+}
+
+.letter-wish {
+    text-align: center;
+    color: #ffabc3 !important;
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 36px !important;
+    margin-top: 25px;
+}
+
+.letter-signature {
+    text-align: right;
+    color: #e7c77a;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-top: 25px;
+    padding-right: 15px;
+}
+
+.close-btn {
+    display: block;
+    margin: 22px auto 0;
+    padding: 11px 35px;
+    border-radius: 30px;
+    border: 1px solid #ff759f;
+    background: linear-gradient(135deg, rgba(255,71,126,.15), rgba(255,152,101,.10));
+    color: #ffabc3;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.close-btn:hover {
+    transform: translateY(-3px) scale(1.04);
+    background: rgba(255,117,159,.18);
+    box-shadow: 0 8px 25px rgba(255,100,150,.3);
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    z-index: 200;
+    pointer-events: none;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+#musicButton {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    border: 2px solid rgba(231, 199, 122, .65);
+    border-radius: 50%;
+    background: rgba(35, 5, 15, .9);
+    color: #ffd477;
+    font-size: 23px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 0 20px rgba(255, 100, 150, .35);
+    backdrop-filter: blur(10px);
+    transition: .3s ease;
+}
+
+#musicButton:hover {
+    transform: scale(1.13) rotate(5deg);
+    box-shadow: 0 0 30px rgba(255, 100, 150, .6);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    body::before, body::after {
+        animation: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+    .hero-text {
+        order: 1;
+    }
+    .multi-photo-frame {
+        max-width: 300px;
+        margin: auto;
+    }
+    .rakhi-content {
+        grid-template-columns: 1fr;
+    }
+    .rakhi-photo {
+        max-width: 350px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 90px 20px 50px;
+    }
+    .hero h1 {
+        font-size: 70px;
+    }
+    .hero h2 {
+        font-size: 45px;
+    }
+    .special-line {
+        font-size: 25px;
+    }
+    .multi-photo-frame {
+        width: 100%;
+        max-width: 275px;
+        height: 375px;
+    }
+    .photo-stack {
+        height: 290px;
+    }
+    .photo-stack img {
+        height: 290px;
+    }
+    .message-section,
+    .rakhi-section,
+    .gallery-section,
+    .thank-you-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .message-card {
+        padding: 40px 22px;
+    }
+    .message-card p {
+        font-size: 15px;
+    }
+    .rakhi-text h2 {
+        font-size: 46px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .thank-you-card {
+        padding: 50px 22px 45px;
+    }
+    .surprise-box {
+        padding: 30px 15px 25px;
+        max-height: 92vh;
+    }
+    .surprise-box h2 {
+        font-size: 46px;
+    }
+    .letter-content {
+        max-height: 420px;
+        padding: 5px 12px 10px;
+    }
+    .letter-content p {
+        font-size: 18px;
+        line-height: 1.65;
+    }
+    .letter-highlight {
+        font-size: 21px !important;
+    }
+    .letter-wish {
+        font-size: 30px !important;
+    }
+    .letter-signature {
+        font-size: 27px;
+    }
+    #musicButton {
+        width: 48px;
+        height: 48px;
+        right: 18px;
+        bottom: 18px;
+        font-size: 20px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     BACKGROUND MUSIC
+========================= -->
+
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+<button id="musicButton" onclick="toggleMusic()" aria-label="Play music">
+    🔇
+</button>
+
+
+<!-- =========================
+     FLOATING HEARTS
+========================= -->
+
+<div class="hearts">
+    <div class="floating-heart">💖</div>
+    <div class="floating-heart">🤍</div>
+    <div class="floating-heart">💕</div>
+    <div class="floating-heart">♡</div>
+    <div class="floating-heart">💗</div>
+    <div class="floating-heart">🤍</div>
+    <div class="floating-heart">🌸</div>
+</div>
+
+
+<!-- =========================
+     FESTIVE LIGHTS
+========================= -->
+
+<div class="lights">
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+    <span class="bulb"></span>
+</div>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="hero-text">
+            <div class="small-title">
+                Happy
+            </div>
+            <h1>
+                Raksha<br>
+                Bandhan
+            </h1>
+            <h2>
+                Anna ❤️
+            </h2>
+            <div class="special-line">
+                My Dearest Brother
+            </div>
+            <p class="hero-subtitle">
+                We may not share the same home or childhood,
+                but life gave me a bond I will always treasure. ❤️
+            </p>
+            <button class="surprise-btn" onclick="openSurprise()">
+                🎁 Open Your Surprise
+            </button>
+        </div>
+
+        <!-- SMALLER & CONTAINED ANNA IMAGE -->
+        <div class="multi-photo-frame">
+            <div class="photo-stack">
+                <img src="anna.png" alt="Anna">
+                <img src="anna.png" alt="Anna">
+                <img src="anna.png" alt="Anna">
+            </div>
+            <div class="photo-caption">
+                Best Brother ❤️
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     MAIN MESSAGE
+========================= -->
+
+<section class="message-section">
+    <div class="message-card">
+        <h2>
+            Anna, you have a special place in my heart ❤️
+        </h2>
+        <p>
+            You may not be my brother by birth,
+            but our bond feels just as precious as family.
+        </p>
+        <p>
+            Some relationships are given to us by birth,
+            while some are found by the heart.
+            You are one of those special people I am lucky to have in my life.
+        </p>
+        <p>
+            You are my friend, my supporter,
+            my constant companion through so many moments,
+            and someone I know I can always count on.
+        </p>
+        <p>
+            We have shared laughter, memories, teasing,
+            fights and so many little moments
+            that I will always treasure.
+        </p>
+        <p class="highlight">
+            Forever siblings. ❤️
+        </p>
+    </div>
+</section>
+
+
+<!-- =========================
+     RAKHI MEMORY
+========================= -->
+
+<section class="rakhi-section">
+    <div class="rakhi-content">
+
+        <div class="rakhi-photo">
+            <img src="rakhi.jpg" alt="Raksha Bandhan memory">
+        </div>
+
+        <div class="rakhi-text">
+            <h2>
+                A Bond Chosen By Heart 🧿
+            </h2>
+            <p>
+                They say brothers and sisters are connected by blood.
+                But our bond proves that family can also be created by the heart.
+            </p>
+            <br>
+            <p>
+                You are one of the most special people in my life,
+                and I would never trade this beautiful bond for anything.
+            </p>
+            <br>
+            <p>
+                This rakhi isn't just a thread.
+                It's a reminder that no matter where life takes us,
+                you'll always have a sister who cares about you,
+                supports you and wishes the best for you.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     MEMORIES GALLERY
+========================= -->
+
+<section class="gallery-section">
+    <h2 class="section-title">
+        Moments & Memories 📸✨
+    </h2>
+
+    <div class="gallery-grid">
+        <div class="gallery-card">
+            <img src="memory1.jpg" alt="Brother and Sister Memory 1">
+            <div class="gallery-caption">
+                Unbreakable Bond ❤️
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="memory2.png" alt="Brother and Sister Memory 2">
+            <div class="gallery-caption">
+                Laughter & Chaos 😂
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="memory3.jpg" alt="Brother and Sister Memory 3">
+            <div class="gallery-caption">
+                Forever Together 🧿
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="memory4.png" alt="Brother and Sister Memory 4">
+            <div class="gallery-caption">
+                Precious Times ✨
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     THANK YOU CARD
+========================= -->
+
+<section class="thank-you-section">
+    <div class="thank-you-card">
+        <div class="thank-you-meta">
+            One Last Thing...
+        </div>
+        <div class="thank-you-title">
+            Thank you for being
+            <span class="thank-you-highlight">
+                you.
+            </span>
+            <span class="heart-icon">
+                ❤️
+            </span>
+        </div>
+        <div class="thank-you-subtext">
+            For every memory.<br>
+            Every laugh.<br>
+            Every stupid fight.<br>
+            And every moment in between.
+        </div>
+        <div class="thank-you-small-heart">
+            ❤️
+        </div>
+        <div class="thank-you-festive-wishing">
+            Happy Rakshabandhan!
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+    <h2>
+        Happy Raksha Bandhan, Anna! ❤️
+    </h2>
+    <p>
+        To someone who became family by heart —
+        thank you for being such a beautiful part of my life. 🧿
+    </p>
+    <div class="signature">
+        With love,<br>
+        Your Chelli ❤️
+    </div>
+</footer>
+
+
+<!-- =========================
+     SURPRISE LETTER
+========================= -->
+
+<div class="surprise" id="surprise">
+    <div class="surprise-box">
+
+        <div class="letter-decoration">
+            💌
+        </div>
+
+        <div class="letter-top">
+            A Little Letter For You
+        </div>
+
+        <h2>
+            Dear Anna ❤️
+        </h2>
+
+        <div class="letter-content">
+            <p>
+                On this Raksha Bandhan, I just wanted to tell you
+                how grateful I am to have you in my life.
+            </p>
+            <p>
+                Some people enter our lives unexpectedly and slowly
+                become a beautiful part of our story.
+                You are one of those people for me.
+            </p>
+            <p>
+                Thank you for all the laughs, the teasing,
+                the conversations, the little fights,
+                and all the memories we have created together.
+            </p>
+            <p>
+                I may not say it every day,
+                but I truly appreciate you.
+                No matter where life takes us,
+                I hope our bond always remains just as special.
+            </p>
+            <p>
+                Thank you for being someone I can talk to,
+                laugh with, trust, and share so many beautiful
+                moments with.
+            </p>
+            <p class="letter-highlight">
+                You will always have a special place
+                in my heart. 🧿❤️
+            </p>
+            <p class="letter-wish">
+                Happy Raksha Bandhan, Anna! ✨
+            </p>
+            <div class="letter-signature">
+                With lots of love,<br>
+                Your Chelli 🤍
+            </div>
+        </div>
+
+        <button class="close-btn" onclick="closeSurprise()">
+            Close ❤️
+        </button>
+
+    </div>
+</div>
+
+
+<script>
+
+window.addEventListener("DOMContentLoaded", () => {
+    burstOpeningHearts();
+    attemptAutoPlay();
+});
+
+function burstOpeningHearts() {
+    const hearts = ["🤍", "💖", "💕", "🤍", "💗", "♡", "🌸", "🤍", "💓"];
+    const totalHearts = 70;
+    for (let i = 0; i < totalHearts; i++) {
+        setTimeout(() => {
+            const heart = document.createElement("div");
+            heart.className = "opening-heart";
+            heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = (14 + Math.random() * 18) + "px";
+            heart.style.animationDuration = (2.5 + Math.random() * 2.5) + "s";
+            document.body.appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }, i * 40);
+    }
+}
+
+function openSurprise() {
+    const surprise = document.getElementById("surprise");
+    surprise.classList.add("active");
+    createConfetti();
+    playAudio();
+}
+
+function closeSurprise() {
+    document.getElementById("surprise").classList.remove("active");
+}
+
+document.getElementById("surprise").addEventListener("click", function(event) {
+    if (event.target === this) {
+        closeSurprise();
+    }
+});
+
+function createConfetti() {
+    const symbols = ["🤍", "💖", "💕", "✨", "🎀", "💫", "❤️"];
+    for (let i = 0; i < 100; i++) {
+        const piece = document.createElement("div");
+        piece.className = "confetti";
+        piece.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+        piece.style.left = Math.random() * 100 + "vw";
+        piece.style.fontSize = (12 + Math.random() * 20) + "px";
+        piece.style.animationDuration = (2 + Math.random() * 3) + "s";
+        document.body.appendChild(piece);
+        setTimeout(() => {
+            piece.remove();
+        }, 5000);
+    }
+}
+
+const backgroundMusic = document.getElementById("backgroundMusic");
+const musicButton = document.getElementById("musicButton");
+backgroundMusic.volume = 0.35;
+
+function playAudio() {
+    backgroundMusic.play().then(() => {
+        musicButton.innerHTML = "🔊";
+    }).catch(() => {});
+}
+
+function attemptAutoPlay() {
+    backgroundMusic.play().then(() => {
+        musicButton.innerHTML = "🔊";
+    }).catch(() => {
+        const startMusicOnInteraction = () => {
+            playAudio();
+            window.removeEventListener("click", startMusicOnInteraction);
+            window.removeEventListener("touchstart", startMusicOnInteraction);
+            window.removeEventListener("keydown", startMusicOnInteraction);
+            window.removeEventListener("scroll", startMusicOnInteraction);
+        };
+        window.addEventListener("click", startMusicOnInteraction);
+        window.addEventListener("touchstart", startMusicOnInteraction);
+        window.addEventListener("keydown", startMusicOnInteraction);
+        window.addEventListener("scroll", startMusicOnInteraction);
+    });
+}
+
+function toggleMusic() {
+    if (backgroundMusic.paused) {
+        playAudio();
+    } else {
+        backgroundMusic.pause();
+        musicButton.innerHTML = "🔇";
+    }
+}
+
+</script>
+
+</body>
+</html>
